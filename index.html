@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Login Jumpy</title>
+    <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+      </style>
+</head>
+
+<body>
+    <nav>
+        <img src="dnc.png">
+    </nav>
+
+    <section>
+        <img src="jumpy.png" alt="">
+        <h1>Bem vindo ao Jumpy!</h1>
+
+        <div id="inputs">
+            <form name="myForm" onsubmit="return validateForm()"  method="post">
+            <label>Nome Completo:</label>
+            <input type="text"  placeholder="Nome completo" class="input" id="nome" name="nome" >
+            <span id="msgAlerta1" class="vermelho" justify-content="flex-end"></span>
+            
+        
+
+        <label>Email:</label>
+        
+            <input type="text"  placeholder="Email@email.com"  class="input" id="email" name="email" >
+            <span id="msgAlerta2" class="vermelho" justify-content="flex-end"></span>
+        
+
+        <label>Telefone:</label>
+        
+            <input type="text"  placeholder="(00) 00000-0000"  class="input" id="tel" name="tel" >
+            <span id="msgAlerta3" class="vermelho" justify-content="flex-end"></span>
+        
+
+        <label>CPF:</label>
+        
+            <input type="text"  placeholder="000.000.000-00"  class="input" id="cpf" name="cpf" >
+            <span id="msgAlerta4" class="vermelho" justify-content="flex-end"></span>
+        
+
+        <label>Senha:</label>
+        
+            <input type="text"  placeholder="*******************"  class="input" id="senha" name="senha" >
+            <span id="msgAlerta5" class="vermelho" justify-content="flex-end"></span>
+
+            <button type ="submit" >Cadastrar</button>
+
+            <span id="msgAlerta6"></span>
+            <span id="msgAlerta7"></span>
+
+        </form>
+        </div>
+        
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
